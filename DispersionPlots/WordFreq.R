@@ -1,4 +1,4 @@
-text.v <- scan("C://Users/dhhey/Documents/TextAnalysisWithR/data/plainText/EDITED Wife of Bath's Tale.txt", what='char', sep='\n')
+text.v <- scan("FILEPATH...text.txt", what='char', sep='\n')
 text.lower.v <- tolower(text.v)
 text.words.l <- strsplit(text.lower.v, "\\W")
 text.words.v <- unlist(text.words.l)
