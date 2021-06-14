@@ -4,10 +4,10 @@ searchWords[2] <- readline(prompt="Enter word to search:  ")
 searchWords[3] <- readline(prompt="Enter word to search:  ")
 searchWords[4] <- readline(prompt="Enter word to search:  ")
 
-taleList.v <- scan("C://Users/dhhey/Documents/TextAnalysisWithR/data/plainText/TaleList.txt", what='char', sep='\n')
+taleList.v <- scan("FILEPATH...text.txt", what='char', sep='\n')
 
 for (i in taleList.v){
-fileName <- paste("C://Users/dhhey/Documents/TextAnalysisWithR/data/plainText/EDITED ",i,".txt", sep="")
+fileName <- paste("FILEPATH...text.txt",i,".txt", sep="")
 text.v <- scan(fileName, what='char', sep='\n')
 text.lower.v <- tolower(text.v)
 text.words.l <- strsplit(text.lower.v, "\\W")
